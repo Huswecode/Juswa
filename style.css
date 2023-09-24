@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+  
+}
+.upper{
+    background-color: rgb(255, 255, 255);
+    border: solid red;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right:  0.5rem;
+    max-width: 1100px;
+ 
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px 40px 30px;
+    display: flex;
+}
+.logo{
+    font-size: 14px;
+}
+.logo p{
+    padding-left: 2px;
+    font-size: 15px;
+}
+.logo h1 span{
+    color: rgb(161, 30, 30);
+
+}
+nav{
+    padding-right: 5%;
+
+}
+nav ul li{
+    justify-content: flex-end;
+    align-items: center;
+    display: inline-block;
+}
+nav ul li a{
+    color: rgb(58, 57, 57);
+    margin-left: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+nav ul li a:hover{
+    background-color: rgb(214, 211, 211);
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.intro h1{
+    margin-top: -13px;
+    color: rgb(22, 22, 22);
+    font-family: sans-serif;
+    letter-spacing: -3px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    font-variant: small-caps;
+}
+.intro h4{
+    color: rgb(104, 98, 98);
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: left;
+    font-variant: small-caps;
+}
+.intro p{
+    font-size: 19px;
+    line-height: 25px;
+}
+.intro a{
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: black;
+    padding: 7px 18px 9px 16px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.intro a:hover{
+    background-color: rgb(29, 26, 26);
+}
+
+img.me{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/*** Media Query ***/
+@media screen and (max-width: 1100px) {
+        .upper{
+            max-width: 900px;
+        }
+}
+@media screen and (max-width: 900px) {
+        .upper{
+            max-width: 800px;
+        }
+}
+@media screen and (max-width: 800px) {
+        .upper{
+            max-width: 700px;
+        }
+}
+@media screen and (max-width: 700px) {
+        .upper{
+            max-width: 600px;
+        }
+}
+@media screen and (max-width: 600px) {
+    .upper{
+        max-width: 460px ;
+    }
+}
+@media screen and (max-width: 460px) {
+    .upper{
+        max-width: 420px;
+    }
+    header{
+        justify-content: flex-start;
+        align-items: start;
+        width: 100%;
+        max-width: 100%;
+        margin-right: 30px;
+        margin-left: 16px;
+        padding: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        margin-top: 18px;
+    }
+    nav ul li a{
+        font-size: 17px;
+        margin-left: 0;
+        margin-right: 22px;
+    }
+    .container{
+        flex-direction: column;
+        margin-left: 16px;
+        padding-left: 0;
+    }
+    .intro,
+    .intro h1,
+    .intro h4{
+        text-align: center;
+    }
+    .intro h1{
+        line-height: 40px;
+        margin: 5px 0 5px 0;
+    }
+    img.me{
+        top: 50%;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .upper{
+        max-width: 325px;
+        padding-left: 0;
+    }
+    nav ul li a{
+        font-size: 15px;
+        margin-right: 14px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .upper{
+        max-width: 240px;
+    }
+    header{
+        margin-left: 5px;
+    }
+    nav{
+        padding-right: 0;
+    }
+    nav ul li a{
+        font-size: 13px;
+        margin-right: 12px;
+    }
+
+}
